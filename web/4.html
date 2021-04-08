@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>C COIN</title>
+    <meta charset="uft-8">
+</head>
+
+<body>
+    <h1><a href="index.html">C COIN</a></h1>
+    C Coin is blockchain-based crypto currency.
+    <ol>
+        <li><a href="1.html">Login</a></li>
+        <li><a href="2.html">Like</a></li>
+        <li><a href="3.html">Search</a></li>
+        <li><a href="4.html">Map</a></li>
+    </ol>
+    <a href="https://www.google.co.kr/maps/@37.053745,125.6553969,5z?hl=ko">GOOGLE MAPS</a>
+    <form action="index.html">
+        <h3>지역</h3>
+        <select name="location">
+            <option value="busan">부산</option>
+            <option value="seoul">서울</option>
+            <option value="jeju">제주</option>
+            <option value="hwasung">화성</option>
+        </select>
+        <input type="submit">
+
+        <h3>지역 (복수)</h3>
+        <select name="location" multiple>
+            <option value="busan">부산</option>
+            <option value="seoul">서울</option>
+            <option value="jeju">제주</option>
+            <option value="hwasung">화성</option>
+        </select>
+        <input type="submit">
+
+        <h3>지역 (라디오버튼)</h3>
+        부산 <input type="radio" name="location" value="busan" checked>
+        서울 <input type="radio" name="location" value="seoul">
+        제주 <input type="radio" name="location" value="jeju">
+        화성 <input type="radio" name="location" value="hwasung">
+        <input type="submit">
+        <input type="hidden" value="test" onclick="console.log('test')">
+        <input type="button" value="alert" onclick="alert('test')">
+    </form>
+</body>
+
+</html>
