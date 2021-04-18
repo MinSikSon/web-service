@@ -44,6 +44,13 @@
         <input type="hidden" value="test" onclick="console.log('test')">
         <input type="button" value="alert" onclick="alert('test')">
     </form>
+
+    <form action="http://localhost:3000" method="get">
+        <label>method="post" 인 경우에는 url 에 data(query string) 이 붙지 않음</label>
+        <input type="text" name="id">
+        <input type="password" name="pw">
+        <input type="submit">
+    </form>
 </body>
 
 </html>
