@@ -1,10 +1,14 @@
 .box-container {
   display: flex;
-  background-color: rgba(250, 250, 250, 100);
+  /* background-color: rgba(250, 250, 250, 100); */
+  background-color: gray;
   height: 100vh;
   width: 94vw;
-  border: 1px solid rgba(213, 213, 213, 100);
-  border-radius: 5px;
+  border: 0.1px solid rgba(207, 207, 207, 100);
+  /* border: 1px solid rgba(213, 213, 213, 100); */
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: 2px 2px 4px 1px rgba(228, 228, 228, 100); */
 }
 /* .box {
   height: 100vh;
@@ -21,7 +25,7 @@
   height: 25px;
   /* background-color: rgba(10, 54, 48, 100); */
   background-color: rgba(66, 54, 48, 100);
-  font-size: 11px;
+  font-size: 12.5px;
   text-align: center;
   border-radius: 5px 0px 0px 0px;
 }
@@ -35,28 +39,75 @@
   height: 100vh;
   width: 77.5vw;
   /* background-color: rgba(255, 255, 255, 100); */
-  background-color: rgba(235, 235, 235, 100);
-  border-radius: 0px 5px 0px 0px;
+  /* background-color: rgba(235, 235, 235, 100); */
+  background-color: blue;
+  /* border-radius: 0px 6px 0px 0px; */
+  border-radius: 6px;
 }
 .box#right_top {
+  /* height: 80px; */
   height: 80px;
   /* background-color: rgba(255, 255, 255, 100); */
-  background-color: rgba(245, 245, 245, 100);
-  border-radius: 0px 5px 0px 0px;
+  background-color: rgba(255, 255, 255, 100);
+  border-radius: 0px 6px 0px 0px;
 }
+#right_title {
+  color: rgba(64, 64, 64, 100);
+  font-weight: bold;
+  padding: 14px;
+}
+#right_title_imoji {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: rgba(177, 177, 177, 10);
+}
+
+input#search {
+  background-color: rgba(247, 247, 247, 100);
+  width: 71vw;
+  height: 18px;
+  margin: 7px 0px 14px 12px; /*top right bottom left*/
+  margin-right: 11px;
+  /* border: 1px solid rgba(213, 213, 213, 100); */
+  border: 0px;
+  border-radius: 3px;
+}
+input#search::placeholder {
+  color: rgba(197, 197, 197, 100);
+}
+
 .box#right_bottom {
   height: 100vh;
   background-color: rgba(255, 255, 255, 100);
 }
 
-#right_title {
-  color: rgba(64, 64, 64, 100);
-  font-weight: bold;
-  padding: 13px;
+table {
+  /* height: 100vh; */
+  /* width: 77.6vw; */
+  width: 74.6vw;
+  background-color: green;
+  border: 0px;
+}
+/* tr {
+  height: 20px;
+  background-color: gray;
+} */
+td {
+  height: 71px;
+  background-color: rgba(255, 255, 255, 100);
 }
 
-input#search {
-  width: 70vw;
-  margin: 7px 0px 20px 12px; /*top right bottom left*/
-  margin-right: 11px;
+td.chat_picture {
+  width: 14vw;
+  background-color: rgba(205, 205, 205, 100);
+}
+
+td.chat_title {
+  width: 45vw;
+  background-color: rgba(205, 205, 123, 100);
+}
+
+td.chat_date {
+  width: 10vw;
+  background-color: rgba(205, 205, 123, 100);
 }
