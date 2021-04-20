@@ -23,7 +23,6 @@
 }
 .box#left_top {
   height: 25px;
-  /* background-color: rgba(10, 54, 48, 100); */
   background-color: rgba(66, 54, 48, 100);
   font-size: 12.5px;
   text-align: center;
@@ -34,6 +33,19 @@
   background-color: rgba(66, 54, 48, 100);
   color: white;
   border-radius: 5px 0px 0px 0px;
+}
+img#img1 {
+  padding-top: 26px;
+  width: 70px;
+}
+/* img#img1:hover {
+  background-color: rgba(0, 0, 0, 10);
+} */
+img#img2 {
+  position: absolute;
+  left: 348px;
+  top: 18px;
+  height: 34px;
 }
 .box#right {
   height: 100vh;
@@ -87,6 +99,7 @@ table {
   width: 74.6vw;
   background-color: green;
   border: 0px;
+  border-collapse: collapse;
 }
 /* tr {
   height: 20px;
@@ -99,15 +112,29 @@ td {
 
 td.chat_picture {
   width: 14vw;
-  background-color: rgba(205, 205, 205, 100);
+  background-color: rgba(255, 255, 255, 100);
 }
 
 td.chat_title {
-  width: 45vw;
-  background-color: rgba(205, 205, 123, 100);
+  width: 43vw;
+  background-color: rgba(255, 255, 255, 100);
 }
 
 td.chat_date {
-  width: 10vw;
-  background-color: rgba(205, 205, 123, 100);
+  width: 12vw;
+  /* background-color: rgba(205, 205, 123, 100); */
+  background-color: rgba(255, 255, 255, 100);
+  color: rgba(184, 184, 184, 100);
+  font-size: 11px;
+  text-align: right;
+}
+
+/* tr.table-contents:hover { */
+tr.table_contents:hover {
+  background-color: gray;
+  color: gray;
+}
+
+img#img3 {
+  width: 55px;
 }
