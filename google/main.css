@@ -1,0 +1,314 @@
+/* https://fonts.google.com/icons */
+
+html,
+body {
+  height: 100%;
+  min-width: 400px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  height: 100%;
+  display: flex; /*flex 범위? 내 아래 달린 것들 까지*/
+  flex-direction: column;
+  /* min-width: 40vw; */
+  /* margin: 0px; */
+  /* padding: 0px; */
+  /* border: 0px; */
+}
+
+.first {
+  width: 100vw;
+  height: 60px;
+  min-height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  box-sizing: border-box; /*width 및 height 에 padding 및 margin 을 포함*/
+
+  font-size: 14px;
+}
+.first_inner {
+  width: 100vw;
+  height: 100%;
+  /* min-width: 50%; */
+
+  display: flex;
+  flex-direction: row-reverse;
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  /* background-color: gray; */
+  background-color: white;
+}
+.first_right {
+  height: 100%;
+  width: 272.7px;
+  display: flex;
+  flex-direction: row-reverse;
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  /* width: 500px; */
+  /* height: 52px; */
+  /* background-color: blueviolet; */
+  background-color: white;
+}
+
+.first_right_left {
+  width: 122.7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* margin-right: 14px; */
+  box-sizing: border-box; /*width 및 height 에 padding 및 margin 을 포함*/
+
+  /* background-color: red; */
+  background-color: white;
+}
+.link_gmail {
+  padding-left: 10px;
+}
+.link_image {
+  padding-left: 10px;
+}
+
+.first_right_right {
+  /* background-color: pink; */
+  background-color: white;
+  width: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 14px;
+  box-sizing: border-box; /*width 및 height 에 padding 및 margin 을 포함*/
+}
+.link_app {
+  width: 34px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.link_login {
+  width: 80px;
+  height: 36px;
+  /* padding-left: 10px; */
+  color: white;
+  background-color: rgba(27, 115, 232, 100);
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* margin: 0px 8px; */
+  margin: 0px 2px 0px 2px;
+  border-radius: 5px;
+}
+.link_login:link {
+  color: white;
+  background-color: rgba(27, 115, 232, 100);
+  text-decoration: none;
+}
+.link_login:visited {
+  color: white;
+  background-color: rgba(27, 115, 232, 100);
+  text-decoration: none;
+}
+.link_login:hover {
+  color: white;
+  background-color: rgba(44, 125, 233, 100);
+  text-decoration: none;
+}
+.link_login:active {
+  color: white;
+  background-color: rgba(27, 115, 232, 100);
+  text-decoration: none;
+}
+
+.second {
+  width: 100vw;
+  /* height: 44vh; */
+  height: calc(100% - 400px);
+  max-height: 290px;
+  min-height: 92px;
+  /* background-color: orange; */
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box; /*width 및 height 에 padding 및 margin 을 포함*/
+}
+.second_center {
+  width: 272px;
+  height: 92px;
+  display: inline-flex;
+}
+.third {
+  width: 100vw;
+  min-height: 160px;
+  /* background-color: yellow; */
+  background-color: white;
+  box-sizing: border-box; /*width 및 height 에 padding 및 margin 을 포함*/
+  padding: 20px;
+}
+.search {
+  width: 100%;
+  height: 100%;
+  /* background-color: gold; */
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+.search_top {
+  width: 100%;
+  max-width: 580px;
+
+  margin: 5px;
+  padding: 0px 8px 0px 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.search_top:hover {
+  box-shadow: 1px 1px 1px rgba(220, 220, 224, 100);
+}
+
+.search_icon {
+  padding-right: 5px;
+}
+.search_icon,
+.search_icon_etc {
+  padding-top: 10px;
+  padding-left: 10px;
+  /* width: 20px; */
+}
+.img_etc {
+  padding: 0px 0px 0px 16px;
+}
+
+.search_input {
+  width: calc(82% - 52px);
+  height: 44px;
+  /* border: 0px solid #dfe1e5; */
+  border: 0px;
+  /* padding-top: 10px; */
+  box-sizing: border-box; /*width 및 height 에 padding 및 margin 을 포함*/
+}
+
+.search_input:focus {
+  outline: none;
+}
+
+.search_bottom {
+  width: 100%;
+
+  padding: 18px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fourth {
+  width: 100vw;
+  height: 60vh;
+  /* background-color: green; */
+  background-color: white;
+}
+.fifth {
+  width: 100vw;
+  height: 54px;
+  min-height: 97px;
+  /* background-color: blue; */
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.fifth_top {
+  width: 100%;
+  height: 50%;
+
+  box-sizing: border-box; /*width 및 height 에 padding 및 margin 을 포함*/
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+  background-color: rgba(242, 242, 242, 100);
+}
+
+.fifth_bottom {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50%;
+
+  background-color: rgba(242, 242, 242, 100);
+}
+.fifth_bottom_left {
+  display: flex;
+}
+.fifth_bottom_right {
+  display: flex;
+}
+
+.fifth_bottom_contents {
+  font-size: 14px;
+  padding: 15px;
+  color: #70757a;
+}
+
+a.link_gmail:link {
+  color: rgba(38, 38, 38, 100);
+}
+a.link_gmail:visited {
+  color: rgba(38, 38, 38, 100);
+}
+
+a:link {
+  color: #70757a;
+  text-decoration: none;
+}
+a:visited {
+  color: #70757a;
+  text-decoration: none;
+}
+a:hover {
+  color: #70757a;
+  text-decoration: underline;
+}
+
+button {
+  height: 36px;
+  margin: 11px 4px;
+  padding: 0px 16px;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  border: none;
+}
+button:hover {
+  /* border: 1px solid rgba(220, 220, 224, 100); */
+  background-color: #f8f9fa;
+  box-shadow: 1px 1px 1px rgba(220, 220, 224, 100);
+}
+button:active {
+  background-color: #f8f9fa;
+}
