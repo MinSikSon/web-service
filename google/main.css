@@ -42,8 +42,8 @@ body {
   /* align-items: center; */
   /* justify-content: center; */
 
-  /* background-color: gray; */
-  background-color: white;
+  background-color: gray;
+  /* background-color: white; */
 }
 .first_right {
   height: 100%;
@@ -55,8 +55,8 @@ body {
 
   /* width: 500px; */
   /* height: 52px; */
-  /* background-color: blueviolet; */
-  background-color: white;
+  background-color: blueviolet;
+  /* background-color: white; */
 }
 
 .first_right_left {
@@ -69,8 +69,8 @@ body {
   /* margin-right: 14px; */
   box-sizing: border-box; /*width 및 height 에 padding 및 margin 을 포함*/
 
-  /* background-color: red; */
-  background-color: white;
+  background-color: red;
+  /* background-color: white; */
 }
 .link_gmail {
   padding-left: 10px;
@@ -80,8 +80,8 @@ body {
 }
 
 .first_right_right {
-  /* background-color: pink; */
-  background-color: white;
+  background-color: pink;
+  /* background-color: white; */
   width: 150px;
 
   display: flex;
@@ -137,7 +137,7 @@ body {
 .second {
   width: 100vw;
   /* height: 44vh; */
-  height: calc(100% - 400px);
+  height: calc(100% - 495px);
   max-height: 290px;
   min-height: 92px;
   /* background-color: orange; */
@@ -155,16 +155,16 @@ body {
 .third {
   width: 100vw;
   min-height: 160px;
-  /* background-color: yellow; */
-  background-color: white;
+  background-color: yellow;
+  /* background-color: white; */
   box-sizing: border-box; /*width 및 height 에 padding 및 margin 을 포함*/
   padding: 20px;
 }
 .search {
   width: 100%;
   height: 100%;
-  /* background-color: gold; */
-  background-color: white;
+  background-color: gold;
+  /* background-color: white; */
 
   display: flex;
   align-items: center;
@@ -226,15 +226,15 @@ body {
 .fourth {
   width: 100vw;
   height: 60vh;
-  /* background-color: green; */
-  background-color: white;
+  background-color: green;
+  /* background-color: white; */
 }
 .fifth {
   width: 100vw;
   height: 54px;
   min-height: 97px;
-  /* background-color: blue; */
-  background-color: white;
+  background-color: blue;
+  /* background-color: white; */
 
   display: flex;
   flex-direction: column;
@@ -256,7 +256,8 @@ body {
   display: flex;
   /* flex-direction: column; */
   /* align-items: center; */
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: space-between;
   width: 100%;
   height: 50%;
 
