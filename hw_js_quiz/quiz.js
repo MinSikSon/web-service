@@ -82,13 +82,20 @@ document.addEventListener(`DOMContentLoaded`, function () {
 document.getElementById(`next-button`).onclick = function () {
     let radio = document.getElementsByClassName(`radio-button`);
     console.log(radio);
+    let select = false;
     for (let i = 0; i < radio.length; i++) {
         if (true === !!radio[i].checked) {
             Quiz.QUIZ_SELECT.push(i);
+            select = true;
             break;
         }
     }
     console.log(`Quiz.QUIZ_SELECT:`, Quiz.QUIZ_SELECT);
+
+    if (false === select) {
+        alert(`답 선택해!!`);
+        return;
+    }
 
     ClearQuiz();
     if (Quiz.QUIZ_ORDER < Quiz.QUIZ_NUMBER) {
