@@ -4,7 +4,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
 function AddToDoByEnter() {
     console.log(`AddToDoByEnter`);
-    let bEnterPressed = window.event.keyCode === 13;
+    let bEnterPressed = window.event.key === `Enter`;
     if (false === !!bEnterPressed) {
         return;
     }
@@ -12,8 +12,9 @@ function AddToDoByEnter() {
 }
 
 class Content {
-    constructor(itemId, text) {
-        this.itemId = itemId;
+    static itemIdx = 0;
+    constructor(text) {
+        this.itemId = Content.itemIdx++;
         this.text = text;
         this.checked = false;
     }
@@ -79,7 +80,6 @@ function FinishToDo() {
 }
 
 
-let itemIdx = 0;
 function AddToDo() {
     let inputValue = document.getElementById(`input-main`).value;
     if (inputValue === ``) {
@@ -87,7 +87,8 @@ function AddToDo() {
     }
 
     // create element div - item
-    let new_item = new Content(itemIdx++, inputValue);
+    let new_item = new Content(inputValue);
+    console.log(new_item);
     new_item.create();
 }
 
