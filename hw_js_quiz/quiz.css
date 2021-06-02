@@ -2,7 +2,7 @@ html {
   height: 100%;
   width: 100%;
 
-  padding: 50px 0px;
+  padding: 50px 100px;
   box-sizing: border-box;
   font-size: 1.2rem;
 }
@@ -23,12 +23,21 @@ header {
   background-color: #084887;
   width: 100%;
   color: #fff;
+  text-align: center;
+
+  border-radius: 25px;
+  margin: 10px 0px;
+  box-sizing: border-box;
 }
 
 .quiz-container {
   height: 30%;
   width: 100%;
   background-color: wheat;
+
+  border-radius: 10px;
+  margin: 10px 0px;
+  box-sizing: border-box;
 }
 
 .quiz-main {
@@ -43,6 +52,11 @@ header {
 
   display: flex;
   flex-direction: row;
+
+  border-radius: 25px;
+  margin: 5px 0px;
+  padding: 0px 20px;
+  box-sizing: border-box;
 }
 .quiz-content#quiz-select {
   height: 80%;
@@ -50,6 +64,11 @@ header {
 
   display: flex;
   flex-direction: column;
+
+  border-radius: 25px;
+  margin: 5px 0px;
+  padding: 0px 20px;
+  box-sizing: border-box;
 }
 
 footer {
@@ -58,4 +77,6 @@ footer {
   background-color: #f7f5fb;
   display: flex;
   flex-direction: row;
+
+  padding: 0px 20px;
 }

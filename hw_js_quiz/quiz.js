@@ -1,3 +1,5 @@
+const DEBUG = false;
+
 class Quiz {
     static QUIZ_ORDER = 0;
     static QUIZ_NUMBER = 0;
@@ -17,7 +19,7 @@ class Quiz {
             this.select.push(_select[i]);
             this.divRadio.push(ElementCreator.CreateRadio({ className: `radio`, id: i, innerText: _select[i], value: i }));
             this.divRadio[i].onclick = function () {
-                console.log(this);
+                if (DEBUG === true) console.log(this);
             }
         }
         Quiz.QUIZ_LIST.push(this);
@@ -41,7 +43,7 @@ class ElementCreator {
         return div;
     }
     static CreateRadio(_attr) {
-        // console.log(_attr);
+        if (DEBUG === true) console.log(_attr);
         let label = this.CreateLabel({ className: _attr.className + `-label`, id: `label` + _attr.id, innerText: _attr.innerText });
         let radio = this.CreateInput({ type: `radio`, name: `radio-option`, className: _attr.className + `-button`, id: `radio` + _attr.id, innerText: _attr.innerText });
 
@@ -59,7 +61,7 @@ class ElementCreator {
     }
 
     static CreateInput(_attr) {
-        // console.log(`[CreateInput]`, _attr);
+        if (DEBUG === true) console.log(`[CreateInput]`, _attr);
         let input = document.createElement(`input`);
         input.type = _attr.type;
         input.name = _attr.name;
@@ -75,7 +77,7 @@ class ElementCreator {
 }
 
 document.addEventListener(`DOMContentLoaded`, function () {
-    console.log(`[DOMContentLoaded]`);
+    if (DEBUG === true) console.log(`[DOMContentLoaded]`);
 
     RegistQuiz();
 
@@ -85,7 +87,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
 document.getElementById(`next-button`).onclick = function () {
     let radio = document.getElementsByClassName(`radio-button`);
-    console.log(radio);
+    if (DEBUG === true) console.log(radio);
     let select = false;
     for (let i = 0; i < radio.length; i++) {
         if (true === !!radio[i].checked) {
@@ -94,7 +96,7 @@ document.getElementById(`next-button`).onclick = function () {
             break;
         }
     }
-    console.log(`Quiz.QUIZ_SELECT:`, Quiz.QUIZ_SELECT);
+    if (DEBUG === true) console.log(`Quiz.QUIZ_SELECT:`, Quiz.QUIZ_SELECT);
 
     if (false === select) {
         alert(`답 선택해!!`);
@@ -165,5 +167,5 @@ function RegistQuiz() {
     new Quiz(`매드몬스터 멤버가 아닌 것을 고르시오.`, [`탄`, `제이호`, `포켓몬스터`], 2);
     new Quiz(`주식 연 수익이 24% 일 때, 자본이 2배가 될 때까지 얼마나 걸릴까요?`, [`3년`, `4년`, `5년`, `6년`], 0);
     new Quiz(`지금까지 총 몇 문제 맞춘거 같나요?`, [0, 1, 2, 3, 4], 4);
-    // console.log(Quiz.QUIZ_LIST);
+    if (DEBUG === true) console.log(Quiz.QUIZ_LIST);
 }
