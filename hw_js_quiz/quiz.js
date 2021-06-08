@@ -6,7 +6,8 @@ class Quiz {
     static QUIZ_LIST = [];
     static QUIZ_SELECT = [];
     constructor(_title, _select, _answerIdx) {
-        this.num = Quiz.QUIZ_NUMBER++;
+        this.num = Quiz.QUIZ_NUMBER;
+        Quiz.QUIZ_NUMBER += 1;
         this.title = _title;
         this.select = Array();
         this.answerIdx = _answerIdx;
@@ -162,10 +163,12 @@ function ClearQuiz() {
 
 function RegistQuiz() {
     // new Quiz(제목, 문제, 답);
+    new Quiz(`궁금한거? = ?`, [1, 2, 3, 4, 5], 1);
     new Quiz(`1 + 1 = ?`, [1, 2, 3, 4, 5], 1);
     new Quiz(`내 나이는 몇 살 일까요??`, [`31살`, 32, 33, 34, 35], 2);
     new Quiz(`매드몬스터 멤버가 아닌 것을 고르시오.`, [`탄`, `제이호`, `포켓몬스터`], 2);
     new Quiz(`주식 연 수익이 24% 일 때, 자본이 2배가 될 때까지 얼마나 걸릴까요?`, [`3년`, `4년`, `5년`, `6년`], 0);
     new Quiz(`지금까지 총 몇 문제 맞춘거 같나요?`, [0, 1, 2, 3, 4], 4);
+    new Quiz(`하이!!`, [0, 1, 2, 3, 4], 3);
     if (DEBUG === true) console.log(Quiz.QUIZ_LIST);
 }
