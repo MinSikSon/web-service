@@ -52,6 +52,13 @@ class ElementCreator {
         return li;
     }
 
-    static
+    static CreateCanvas(attr) {
+        let canvas = document.createElement(`canvas`);
+        canvas.className = attr.className;
+        canvas.id = attr.id;
+        canvas.style = attr.style;
+
+        return canvas;
+    }
 
 }

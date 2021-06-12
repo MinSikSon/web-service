@@ -1,15 +1,9 @@
 
 let chatCount = 0;
 let userNameList = [`박범진`, `see K`, `lyn C`, `SMS`];
-document.getElementById(`chat`).onkeydown = function (e) {
-    // console.log(`[e.type]`, e, e.target.value);
-}
 
 // document.getElementById(`chat`).onkeyup = function (e) {
 document.getElementById(`chat`).onkeypress = function (e) {
-    // console.log(`[${e.type}]`, e, e.target.value);
-
-    // if (e.code === `Enter`) 를 하면 Enter 2번 친 효과 나타나는데 왜지?
     if (e.code === `Enter` && e.target.value !== ``) {
         let _style = ``;
         if (chatCount % 2 === 1) {
@@ -23,10 +17,7 @@ document.getElementById(`chat`).onkeypress = function (e) {
         ElementCreator.ClearValueById(`chat`);
         chatCount++;
 
-
-        let height = document.getElementById(`chat`).scrollHeight;
         console.log(`height`, height, document.getElementById(`chat`).scrollTop, document.getElementById(`chat`));
-        document.getElementById(`chat`).scrollTop = height;
     }
 }
 
